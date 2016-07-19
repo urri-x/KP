@@ -1,0 +1,46 @@
+/* AjaxInformer */
+.ajaxInformerContainer {
+  position: fixed;
+  width: 100%;
+  top: 50%;
+  left: 0;
+  z-index: 50101;
+  text-align: center;
+  transform: translateY(-50%);
+}
+.ajaxInformer {
+  display: inline-block;
+  margin: 0 auto;
+  height: 50px;
+  -webkit-box-shadow: 0 6px 10px rgba(0, 0, 0, 0.4);
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.4);
+  background-color: #666666;
+  background-color: rgba(0, 0, 0, 0.6);
+  border-radius: 25px;
+  line-height: 48px;
+  vertical-align: middle;
+  color: #ffffff;
+  font-size: 20px;
+  padding: 0 25px 0 55px;
+  position: relative;
+}
+.ajaxInformer:before {
+  content: '';
+  position: absolute;
+  width: 32px;
+  height: 32px;
+  display: inline-block;
+  background: url('../img/ajaxInformer.gif?hash=3391283297') 0 0 no-repeat;
+  left: 15px;
+  top: 9px;
+}
+.ajaxInformer__cancelled.ajaxInformer:before,
+.ajaxInformer__saved.ajaxInformer:before {
+  background-image: url('../img/ajaxInformer__saved.gif?hash=2212908998');
+}
+.html__lightboxOpened .ajaxInformer {
+  padding-right: 42px;
+}
+.ajaxInformer img {
+  display: none !important;
+}
