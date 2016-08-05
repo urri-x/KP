@@ -11,7 +11,7 @@ namespace KP.WebApi
 		{
 			HostFactory.Run(x =>
 			{
-				x.SetServiceName("KP2");
+				x.SetServiceName("KP.Web");
 				x.WebApiService(b=>b.RegisterModule<ApiAutofacModule>());
 			});
 		}

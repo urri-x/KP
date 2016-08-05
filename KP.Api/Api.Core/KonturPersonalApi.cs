@@ -1,13 +1,13 @@
 ﻿using System.Linq;
-using Kontur.Forms.Api.AppObjects;
 
-namespace Kontur.Forms.Api.Core
+namespace KP.Api.Api.Core
 {
     public class KonturPersonalApi : IKonturPersonalApi
     {
-        public IQueryable<AppObject> GetAppObjects(int objectType)
+        public KonturPersonalApi()
         {
-            throw new System.NotImplementedException();
+            
         }
+        
     }
 }

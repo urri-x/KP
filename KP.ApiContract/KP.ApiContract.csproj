@@ -4,11 +4,11 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{6A0951DC-0ADC-434D-ABC6-62EBB804B47E}</ProjectGuid>
+    <ProjectGuid>{73C8BB44-F475-4A87-A1F6-95092BBF7752}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>KP.Api</RootNamespace>
-    <AssemblyName>KP.Api</AssemblyName>
+    <RootNamespace>KP.ApiContract</RootNamespace>
+    <AssemblyName>KP.ApiContract</AssemblyName>
     <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
   </PropertyGroup>
@@ -40,15 +40,9 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Api.Core\IKonturPersonalApi.cs" />
-    <Compile Include="Api.Core\KonturPersonalApi.cs" />
+    <Compile Include="IRepository.cs" />
+    <Compile Include="IStorage.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-  </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\KP.ApiContract\KP.ApiContract.csproj">
-      <Project>{73c8bb44-f475-4a87-a1f6-95092bbf7752}</Project>
-      <Name>KP.ApiContract</Name>
-    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

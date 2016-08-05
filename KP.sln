@@ -5,11 +5,17 @@ VisualStudioVersion = 14.0.24720.0
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KP.WebApi", "KP.WebApi\KP.WebApi.csproj", "{79C0D063-DAF0-4270-81EE-9CAA06A219A3}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KP.Api.UnitTests", "KP.Api.UnitTests\KP.Api.UnitTests.csproj", "{418FE5F8-4E11-450B-A986-F2E777013A80}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KP.UnitTests", "KP.Api.UnitTests\KP.UnitTests.csproj", "{418FE5F8-4E11-450B-A986-F2E777013A80}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KP.Api", "KP.Api\KP.Api.csproj", "{6A0951DC-0ADC-434D-ABC6-62EBB804B47E}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KP.WebApi.Core", "KP.WebApi.Core\KP.WebApi.Core.csproj", "{B3D3F32D-A0FC-4700-B1A8-BA7DB2BA8CC1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KP.Data", "KP.Data\KP.Data.csproj", "{52C22CA1-189D-4C79-B145-B5307FA6CAD3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KP.Service", "KP.Service\KP.Service.csproj", "{A5C2DBA5-058D-4638-8972-04423869DF0B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KP.ApiContract", "KP.ApiContract\KP.ApiContract.csproj", "{73C8BB44-F475-4A87-A1F6-95092BBF7752}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -41,6 +47,24 @@ Global
 		{B3D3F32D-A0FC-4700-B1A8-BA7DB2BA8CC1}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B3D3F32D-A0FC-4700-B1A8-BA7DB2BA8CC1}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B3D3F32D-A0FC-4700-B1A8-BA7DB2BA8CC1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{52C22CA1-189D-4C79-B145-B5307FA6CAD3}.Client|Any CPU.ActiveCfg = Release|Any CPU
+		{52C22CA1-189D-4C79-B145-B5307FA6CAD3}.Client|Any CPU.Build.0 = Release|Any CPU
+		{52C22CA1-189D-4C79-B145-B5307FA6CAD3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{52C22CA1-189D-4C79-B145-B5307FA6CAD3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{52C22CA1-189D-4C79-B145-B5307FA6CAD3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{52C22CA1-189D-4C79-B145-B5307FA6CAD3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A5C2DBA5-058D-4638-8972-04423869DF0B}.Client|Any CPU.ActiveCfg = Release|Any CPU
+		{A5C2DBA5-058D-4638-8972-04423869DF0B}.Client|Any CPU.Build.0 = Release|Any CPU
+		{A5C2DBA5-058D-4638-8972-04423869DF0B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A5C2DBA5-058D-4638-8972-04423869DF0B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A5C2DBA5-058D-4638-8972-04423869DF0B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A5C2DBA5-058D-4638-8972-04423869DF0B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{73C8BB44-F475-4A87-A1F6-95092BBF7752}.Client|Any CPU.ActiveCfg = Release|Any CPU
+		{73C8BB44-F475-4A87-A1F6-95092BBF7752}.Client|Any CPU.Build.0 = Release|Any CPU
+		{73C8BB44-F475-4A87-A1F6-95092BBF7752}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{73C8BB44-F475-4A87-A1F6-95092BBF7752}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{73C8BB44-F475-4A87-A1F6-95092BBF7752}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{73C8BB44-F475-4A87-A1F6-95092BBF7752}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
