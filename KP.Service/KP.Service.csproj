@@ -49,15 +49,9 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="BusinessObjects\Order.cs" />
-    <Compile Include="Orders.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\KP.ApiContract\KP.ApiContract.csproj">
-      <Project>{73c8bb44-f475-4a87-a1f6-95092bbf7752}</Project>
-      <Name>KP.ApiContract</Name>
-    </ProjectReference>
     <ProjectReference Include="..\KP.Data\KP.Data.csproj">
       <Project>{52c22ca1-189d-4c79-b145-b5307fa6cad3}</Project>
       <Name>KP.Data</Name>

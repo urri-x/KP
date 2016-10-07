@@ -30,6 +30,7 @@ namespace KP.WebApi.Core.Service
         public void Start()
         {
             StartOptions options = new StartOptions();
+            // todo this must be settings
             options.Urls.Add($"http://localhost:{port}");
             options.Urls.Add($"http://127.0.0.1:{port}");
             options.Urls.Add($"http://{Environment.MachineName}:{port}");

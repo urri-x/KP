@@ -1,7 +1,4 @@
-﻿using System;
-using System.Linq;
-using System.Web.Http;
-using JetBrains.Annotations;
+﻿using System.Web.Http;
 using KP.WebApi.Core.Helpers;
 
 namespace KP2.Api.Controllers

@@ -100,8 +100,6 @@
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
       <DependentUpon>Settings.settings</DependentUpon>
     </Compile>
-    <Compile Include="Repository\Repository.cs" />
-    <Compile Include="Repository\Storage.cs" />
   </ItemGroup>
   <ItemGroup>
     <Service Include="{3259AA49-8AA1-44D3-9025-A0B520596A8C}" />
@@ -135,10 +133,7 @@
     </Content>
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\KP.ApiContract\KP.ApiContract.csproj">
-      <Project>{73c8bb44-f475-4a87-a1f6-95092bbf7752}</Project>
-      <Name>KP.ApiContract</Name>
-    </ProjectReference>
+    <Folder Include="Repository\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

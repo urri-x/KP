@@ -1,4 +1,3 @@
-using System;
 using Autofac;
 using JetBrains.Annotations;
 using KP2.Api.Core.DI;

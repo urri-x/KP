@@ -78,8 +78,6 @@
     </Otherwise>
   </Choose>
   <ItemGroup>
-    <Compile Include="Integration_Tests.cs" />
-    <Compile Include="KService_Tests.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -87,10 +85,6 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\KP.ApiContract\KP.ApiContract.csproj">
-      <Project>{73C8BB44-F475-4A87-A1F6-95092BBF7752}</Project>
-      <Name>KP.ApiContract</Name>
-    </ProjectReference>
     <ProjectReference Include="..\KP.Service\KP.Service.csproj">
       <Project>{A5C2DBA5-058D-4638-8972-04423869DF0B}</Project>
       <Name>KP.Service</Name>
