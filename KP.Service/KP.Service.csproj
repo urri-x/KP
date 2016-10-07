@@ -52,7 +52,7 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\KP.Data\KP.Data.csproj">
+    <ProjectReference Include="..\KP.Storage\KP.Storage.csproj">
       <Project>{52c22ca1-189d-4c79-b145-b5307fa6cad3}</Project>
       <Name>KP.Data</Name>
     </ProjectReference>
