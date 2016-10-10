@@ -7,8 +7,8 @@
     <ProjectGuid>{79C0D063-DAF0-4270-81EE-9CAA06A219A3}</ProjectGuid>
     <OutputType>Exe</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>KP.WebApi</RootNamespace>
-    <AssemblyName>KP.WebApi</AssemblyName>
+    <RootNamespace>KP.Api</RootNamespace>
+    <AssemblyName>KP.Api</AssemblyName>
     <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>

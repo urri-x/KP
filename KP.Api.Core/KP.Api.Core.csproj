@@ -7,8 +7,8 @@
     <ProjectGuid>{B3D3F32D-A0FC-4700-B1A8-BA7DB2BA8CC1}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>KP.WebApi.Core</RootNamespace>
-    <AssemblyName>KP.WebApi.Core</AssemblyName>
+    <RootNamespace>KP.Api.Core</RootNamespace>
+    <AssemblyName>KP.Api.Core</AssemblyName>
     <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
   </PropertyGroup>

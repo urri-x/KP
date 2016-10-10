@@ -4,11 +4,11 @@ using System.Runtime.InteropServices;
 // General Information about an assembly is controlled through the following 
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
-[assembly: AssemblyTitle("KP.Data")]
+[assembly: AssemblyTitle("KP.Storage")]
 [assembly: AssemblyDescription("")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("SKB Kontur")]
-[assembly: AssemblyProduct("KP.Data")]
+[assembly: AssemblyProduct("KP.Storage")]
 [assembly: AssemblyCopyright("Copyright © SKB Kontur 2016")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
