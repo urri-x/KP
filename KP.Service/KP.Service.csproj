@@ -42,10 +42,15 @@
     <Reference Include="System.Core" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Constsnts\RequisiteTypes.cs" />
     <Compile Include="IOrganizationProvider.cs" />
     <Compile Include="Organization.cs" />
     <Compile Include="OrganizationProvider.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Requisites\DynamicRequisite.cs" />
+    <Compile Include="Requisites\DynamicRequisitesProvider.cs" />
+    <Compile Include="Requisites\IDynamicRequisitesProvider.cs" />
+    <Compile Include="ShortName.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />

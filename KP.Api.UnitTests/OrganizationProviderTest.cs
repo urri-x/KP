@@ -5,8 +5,9 @@ using System.Text;
 using System.Threading.Tasks;
 using FluentAssertions;
 using KP.Service;
+using KP.Service.Requisites;
 using KP.Storage;
-using KP.Storage.Repository;
+using KP.Storage.Entities;
 using MongoDB.Bson;
 using NSubstitute;
 using NUnit.Framework;
@@ -20,15 +21,27 @@ namespace KP.UnitTests
         public void GetAll_Returns_All()
         {
             var repository = Substitute.For<IRepository>();
-            var allResult = new List<Organization>()
+            var dateBegin = DateTime.Today;
+            var firstEntity = new ObjectEntity() {DateBegin = dateBegin, DateEnd = dateBegin.AddDays(10), Id = ObjectId.GenerateNewId()};
+            var secondEntity = new ObjectEntity() {DateBegin = dateBegin.AddDays(1), DateEnd = null, Id = ObjectId.GenerateNewId()};
+            var shortnameEntities = new List<ShortNameEntity>()
             {
-                new Organization() {DateBegin = DateTime.Today, DateEnd = null, Id = ObjectId.GenerateNewId()},
-                new Organization() {DateBegin = DateTime.Today.AddDays(1), DateEnd = null, Id = ObjectId.GenerateNewId()}
+                new ShortNameEntity() {ObjectId = firstEntity.Id, DateBegin = firstEntity.DateBegin, Value = "old"},
+                new ShortNameEntity() {ObjectId = firstEntity.Id, DateBegin = firstEntity.DateBegin.AddDays(1), Value = "new"},
+                new ShortNameEntity() {ObjectId = secondEntity.Id, DateBegin = secondEntity.DateBegin, Value = "one"}
             };
-            repository.GetAll<Organization>().Returns(allResult);
+            
+            repository.GetAll<ObjectEntity>().Returns(new List<ObjectEntity>() {firstEntity,secondEntity});
+            repository.GetAll<ShortNameEntity>().Returns(shortnameEntities);
+
             var organizationProvider = new OrganizationProvider(repository);
             var organizations = organizationProvider.GetAll().Result.ToList();
-            organizations.Count.Should().Be(2);
+            var expectedOrganizations = new List<Organization>()
+            {
+                new Organization() {DateBegin = firstEntity.DateBegin, Id = firstEntity.Id, DateEnd = firstEntity.DateEnd},   
+                new Organization() {DateBegin = secondEntity.DateBegin, Id = secondEntity.Id, DateEnd = secondEntity.DateEnd}    
+            };
+            organizations.ShouldBeEquivalentTo(expectedOrganizations, options=>options.ExcludingNestedObjects());
         }
     }
 }

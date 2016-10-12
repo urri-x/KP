@@ -1,6 +1,9 @@
 ﻿using System.Collections.Generic;
+using System.Linq;
 using System.Threading.Tasks;
+using KP.Service.Requisites;
 using KP.Storage;
+using KP.Storage.Entities;
 
 namespace KP.Service
 {
@@ -15,8 +18,22 @@ namespace KP.Service
 
         public async Task<IEnumerable<Organization>> GetAll()
         {
-            var result = await repository.GetAll<Organization>();
-            return result;
+            var staffObjects = await repository.GetAll<ObjectEntity>();
+            var shortNames = await repository.GetAll<ShortNameEntity>();
+
+            var organizations = staffObjects.Select(o => new Organization()
+            {
+                DateBegin = o.DateBegin,
+                DateEnd = o.DateEnd,
+                Id = o.Id,
+                ShortName = new DynamicRequisitesProvider<ShortName>(
+                    shortNames
+                    .Where(s=>s.ObjectId.Equals(o.Id))
+                    .Select(s=>new ShortName()))
+            });
+            return organizations;
+
         }
     }
+
 }
