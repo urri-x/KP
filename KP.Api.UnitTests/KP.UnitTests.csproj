@@ -77,8 +77,8 @@
     <Otherwise />
   </Choose>
   <ItemGroup>
-    <Compile Include="OrganizationProviderTest.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="TreeProvider_Test.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="app.config" />
@@ -92,6 +92,10 @@
     <ProjectReference Include="..\KP.Storage\KP.Storage.csproj">
       <Project>{52C22CA1-189D-4C79-B145-B5307FA6CAD3}</Project>
       <Name>KP.Storage</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\KP.Tree\KP.Tree.csproj">
+      <Project>{DA56DE9B-441F-4DBF-9AC6-0AF1A4857B74}</Project>
+      <Name>KP.Tree</Name>
     </ProjectReference>
   </ItemGroup>
   <Choose>

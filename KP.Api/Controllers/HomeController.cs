@@ -1,7 +1,7 @@
 ﻿using System.Web.Http;
 using KP.WebApi.Core.Helpers;
 
-namespace KP2.Api.Controllers
+namespace KP.Api.Controllers
 {
 	[RoutePrefix("")]
 	public class HomeController : ApiController

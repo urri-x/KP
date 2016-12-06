@@ -2,7 +2,7 @@ using Autofac;
 using JetBrains.Annotations;
 using KP2.Api.Core.DI;
 
-namespace KP.WebApi.DI
+namespace KP.Api.DI
 {
     public class ApiAutofacModule : Module
     {

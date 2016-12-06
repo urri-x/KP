@@ -8,7 +8,7 @@ using Newtonsoft.Json;
 using Newtonsoft.Json.Serialization;
 using Owin;
 
-namespace KP.WebApi.Core.Service
+namespace KP.Api.Core.Service
 {
     public class WebApiService
     {

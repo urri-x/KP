@@ -13,6 +13,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KP.Storage", "KP.Storage\KP
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KP.Service", "KP.Service\KP.Service.csproj", "{A5C2DBA5-058D-4638-8972-04423869DF0B}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KP.Tree", "KP.Tree\KP.Tree.csproj", "{DA56DE9B-441F-4DBF-9AC6-0AF1A4857B74}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Client|Any CPU = Client|Any CPU
@@ -49,6 +51,12 @@ Global
 		{A5C2DBA5-058D-4638-8972-04423869DF0B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A5C2DBA5-058D-4638-8972-04423869DF0B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A5C2DBA5-058D-4638-8972-04423869DF0B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DA56DE9B-441F-4DBF-9AC6-0AF1A4857B74}.Client|Any CPU.ActiveCfg = Release|Any CPU
+		{DA56DE9B-441F-4DBF-9AC6-0AF1A4857B74}.Client|Any CPU.Build.0 = Release|Any CPU
+		{DA56DE9B-441F-4DBF-9AC6-0AF1A4857B74}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DA56DE9B-441F-4DBF-9AC6-0AF1A4857B74}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DA56DE9B-441F-4DBF-9AC6-0AF1A4857B74}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DA56DE9B-441F-4DBF-9AC6-0AF1A4857B74}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

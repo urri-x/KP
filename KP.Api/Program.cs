@@ -1,9 +1,9 @@
 ﻿using Autofac;
-using KP.WebApi.Core.Service;
-using KP.WebApi.DI;
+using KP.Api.Core.Service;
+using KP.Api.DI;
 using Topshelf;
 
-namespace KP.WebApi
+namespace KP.Api
 {
 	public static class Program
 	{

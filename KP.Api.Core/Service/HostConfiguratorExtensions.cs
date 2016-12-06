@@ -5,7 +5,7 @@ using KP2.Api.DI;
 using Topshelf;
 using Topshelf.HostConfigurators;
 
-namespace KP.WebApi.Core.Service
+namespace KP.Api.Core.Service
 {
     public static class HostConfiguratorExtensions
     {
