@@ -1,4 +1,5 @@
 ﻿using System;
+using KP.Storage.Domain;
 
 namespace KP.Tree
 {
@@ -8,7 +9,7 @@ namespace KP.Tree
         public int? ParentId;
         public DateTime DateBegin;
         public DateTime? DateEnd;
-        public TreeObjectType Type;
+        public StaffObjectType Type;
 
         public override string ToString()
         {

@@ -1,5 +1,6 @@
 using Autofac;
 using JetBrains.Annotations;
+using KP.Storage.Domain;
 using KP2.Api.Core.DI;
 
 namespace KP.Api.DI
@@ -10,6 +11,11 @@ namespace KP.Api.DI
         {
             builder.RegisterControllers(ThisAssembly);
             builder.RegisterNonControllers(ThisAssembly)
+                .AsImplementedInterfaces()
+                .AsSelf()
+                .SingleInstance();
+            builder.RegisterAssemblyTypes(
+                typeof(StaffObject).Assembly)
                 .AsImplementedInterfaces()
                 .AsSelf()
                 .SingleInstance();

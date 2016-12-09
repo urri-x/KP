@@ -4,6 +4,7 @@ using System.Linq;
 using System.Threading;
 using NUnit.Framework;
 using FluentAssertions;
+using KP.Storage.Domain;
 
 namespace KP.Tree.UnitTests
 {
@@ -16,9 +17,9 @@ namespace KP.Tree.UnitTests
             var treeProvider = new TreeProvider();
             treeProvider.InsertNodes(new List<TreeNode>()
             {
-                new TreeNode() {Id = 1, ParentId = null, DateBegin = new DateTime(2016, 1, 1), DateEnd = null, Type = TreeObjectType.Department}
+                new TreeNode() {Id = 1, ParentId = null, DateBegin = new DateTime(2016, 1, 1), DateEnd = null, Type = StaffObjectType.StaffDepartment}
             });
-            treeProvider.Count(TreeObjectType.Department).Should().Be(1);
+            treeProvider.Count(StaffObjectType.StaffDepartment).Should().Be(1);
         }
 
         [Test]
@@ -58,7 +59,7 @@ namespace KP.Tree.UnitTests
                                 ParentId = newParentId,
                                 DateBegin = new DateTime(2010, 1, 1).AddDays(random.Next(2000)),
                                 DateEnd = null,
-                                Type = TreeObjectType.Department
+                                Type = StaffObjectType.StaffDepartment
                             };
                             treeProvider.InsertNodes(new List<TreeNode>(){node});
                             lock (createdNodes)
@@ -79,7 +80,7 @@ namespace KP.Tree.UnitTests
                 Assert.That(t.Join(TimeSpan.FromSeconds(2)));
             if (exceptions.Any())
                 throw new AggregateException(exceptions);
-            treeProvider.Count(TreeObjectType.Department).Should().Be(threadsCount*nodesCount);
+            treeProvider.Count(StaffObjectType.StaffDepartment).Should().Be(threadsCount*nodesCount);
         }
         
 

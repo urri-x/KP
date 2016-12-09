@@ -66,6 +66,19 @@
       <EmbedInteropTypes>True</EmbedInteropTypes>
     </COMReference>
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\KP.Api.Core\KP.Api.Core.csproj">
+      <Project>{b3d3f32d-a0fc-4700-b1a8-ba7db2ba8cc1}</Project>
+      <Name>KP.Api.Core</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\KP.Storage\KP.Storage.csproj">
+      <Project>{52c22ca1-189d-4c79-b145-b5307fa6cad3}</Project>
+      <Name>KP.Storage</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

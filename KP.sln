@@ -15,6 +15,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KP.Service", "KP.Service\KP
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KP.Tree", "KP.Tree\KP.Tree.csproj", "{DA56DE9B-441F-4DBF-9AC6-0AF1A4857B74}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KP.FunctionalTests", "KP.FunctionalTests\KP.FunctionalTests.csproj", "{5C349915-3AF9-4E55-AA28-9B8080DF21E6}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Client|Any CPU = Client|Any CPU
@@ -57,6 +59,12 @@ Global
 		{DA56DE9B-441F-4DBF-9AC6-0AF1A4857B74}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{DA56DE9B-441F-4DBF-9AC6-0AF1A4857B74}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{DA56DE9B-441F-4DBF-9AC6-0AF1A4857B74}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5C349915-3AF9-4E55-AA28-9B8080DF21E6}.Client|Any CPU.ActiveCfg = Release|Any CPU
+		{5C349915-3AF9-4E55-AA28-9B8080DF21E6}.Client|Any CPU.Build.0 = Release|Any CPU
+		{5C349915-3AF9-4E55-AA28-9B8080DF21E6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5C349915-3AF9-4E55-AA28-9B8080DF21E6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5C349915-3AF9-4E55-AA28-9B8080DF21E6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5C349915-3AF9-4E55-AA28-9B8080DF21E6}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

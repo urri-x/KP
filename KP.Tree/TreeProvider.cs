@@ -1,5 +1,7 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
 using FASTTIMEDTREELib;
+using KP.Storage.Domain;
 using SKStructureTree;
 
 namespace KP.Tree
@@ -19,7 +21,7 @@ namespace KP.Tree
            
         }
 
-        public int Count(TreeObjectType type)
+        public int Count(StaffObjectType type)
         {
             lock (lockObject)
             {
@@ -28,11 +30,5 @@ namespace KP.Tree
         }
     }
 
-    public enum TreeObjectType
-    {
-        Organization = 2,
-        Department = 3,
-        StaffPosition = 4,
-        Employee = 5
-    }
+
 }
